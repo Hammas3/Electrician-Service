@@ -1,0 +1,2444 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician Service | Professional Electrical Services in Karachi, Pakistan</title>
+    <meta name="description" content="Professional electrical wiring, repairs, lighting installation, switch & socket services, circuit breaker services, and electrical maintenance in Karachi, Pakistan. Contact us today via phone, email, or WhatsApp.">
+    <meta name="keywords" content="Electrician Service Karachi, Electrical Wiring Karachi, Electrical Repairs, Lighting Installation, Switch and Socket Installation, Circuit Breaker Services, Residential Electrician Karachi, Commercial Electrician Karachi">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Electrician Service | Professional Electrical Services in Karachi">
+    <meta property="og:description" content="Professional electrical wiring, repairs, lighting, switches, sockets, circuit breakers, and maintenance in Karachi, Pakistan.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_PK">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Professional Electrical Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #f59e0b;
+            --primary-dark: #d97706;
+            --primary-light: #fbbf24;
+            --secondary: #0f172a;
+            --secondary-light: #1e293b;
+            --accent: #38bdf8;
+            --bg-dark: #090d16;
+            --bg-card: #131c2e;
+            --bg-card-hover: #1b263d;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+            --success: #22c55e;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Circuit Background Motif */
+        .circuit-bg {
+            background-image: radial-gradient(circle at 20% 30%, rgba(245, 158, 11, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 80% 70%, rgba(56, 189, 248, 0.05) 0%, transparent 40%);
+            position: relative;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--secondary);
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.875rem;
+            padding: 8px 0;
+            color: var(--text-muted);
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .top-bar-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-info a {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .top-bar-info a:hover {
+            color: var(--primary);
+        }
+
+        .top-bar-info i {
+            color: var(--primary);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(9, 13, 22, 0.95);
+            backdrop-filter: blur(12px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .navbar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            white-space: nowrap;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+            flex-shrink: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: var(--transition);
+            font-size: 0.8rem;
+            letter-spacing: 0.01em;
+            position: relative;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover::after, .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-cta .btn {
+            padding: 7px 14px;
+            font-size: 0.78rem;
+            border-radius: 7px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--secondary);
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: #ffffff;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            background-color: #22c55e;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background-color: rgba(245, 158, 11, 0.05);
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            color: var(--text-main);
+            background: none;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 120px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero-feature-item i {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .hero-feature-item span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Hero Visual CSS Illustration Box */
+        .hero-visual {
+            position: relative;
+            background: linear-gradient(135deg, var(--bg-card), var(--secondary-light));
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .electric-panel-mockup {
+            background-color: var(--bg-dark);
+            border: 2px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            position: relative;
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .panel-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .power-indicator {
+            width: 10px;
+            height: 10px;
+            background-color: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--success);
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+        }
+
+        .circuit-breakers-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .breaker-switch {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 8px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .breaker-switch:hover {
+            border-color: var(--primary);
+        }
+
+        .breaker-handle {
+            width: 16px;
+            height: 28px;
+            background: linear-gradient(to bottom, #cbd5e1, #64748b);
+            border-radius: 4px;
+            position: relative;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .breaker-handle.on {
+            transform: translateY(-4px);
+            background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
+            box-shadow: 0 0 8px rgba(245, 158, 11, 0.4);
+        }
+
+        .breaker-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .electrical-stats-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(245, 158, 11, 0.05);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            padding: 16px 20px;
+            border-radius: 12px;
+        }
+
+        .stat-item-title {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .stat-item-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* Section Headings */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(245, 158, 11, 0.1);
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -0.01em;
+        }
+
+        .section-desc {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+        }
+
+        /* Services Section */
+        .services-section {
+            padding: 100px 0;
+            background-color: var(--secondary);
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .service-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 32px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+            background-color: var(--bg-card-hover);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-icon-box {
+            width: 60px;
+            height: 60px;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon-box {
+            background: var(--primary);
+            color: var(--secondary);
+            transform: scale(1.05);
+        }
+
+        .service-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .service-desc {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .service-link:hover {
+            gap: 12px;
+            color: var(--primary-light);
+        }
+
+        /* Residential & Commercial Sections */
+        .sector-section {
+            padding: 100px 0;
+        }
+
+        .sector-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .sector-content h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .sector-content p {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .sector-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 35px;
+        }
+
+        .sector-list-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .sector-list-item i {
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .sector-visual-box {
+            background: linear-gradient(135deg, var(--bg-card), var(--secondary));
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+            position: relative;
+        }
+
+        .sector-visual-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .sector-visual-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .sector-visual-badge {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .sector-visual-body {
+            background-color: var(--bg-dark);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            padding: 24px;
+        }
+
+        .wiring-diagram-line {
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            border-radius: 2px;
+            margin: 16px 0;
+            position: relative;
+        }
+
+        .wiring-diagram-line::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            width: 12px;
+            height: 12px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent);
+        }
+
+        /* Safety Section */
+        .safety-section {
+            padding: 100px 0;
+            background-color: var(--secondary);
+        }
+
+        .safety-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .safety-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .safety-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-4px);
+        }
+
+        .safety-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .safety-content h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .safety-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Interactive Checklist Section */
+        .checklist-section {
+            padding: 100px 0;
+        }
+
+        .checklist-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 45px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .checklist-progress-container {
+            margin-bottom: 35px;
+        }
+
+        .checklist-progress-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .checklist-progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: var(--secondary);
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .checklist-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        .checklist-items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            padding: 16px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: var(--transition);
+            user-select: none;
+        }
+
+        .check-item:hover {
+            border-color: var(--primary);
+        }
+
+        .check-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .check-item label {
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+        }
+
+        .checklist-notice {
+            background: rgba(56, 189, 248, 0.05);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 16px 20px;
+            border-radius: 12px;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        /* How It Works Section */
+        .process-section {
+            padding: 100px 0;
+            background-color: var(--secondary);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            position: relative;
+        }
+
+        .process-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .process-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .process-number {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 16px;
+            opacity: 0.9;
+        }
+
+        .process-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .process-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Why Choose Us */
+        .why-section {
+            padding: 100px 0;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .why-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            transition: var(--transition);
+        }
+
+        .why-card:hover {
+            border-color: var(--primary);
+            background-color: var(--bg-card-hover);
+            transform: translateY(-4px);
+        }
+
+        .why-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+
+        .why-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .why-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Karachi Local Service Section */
+        .karachi-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--bg-card), var(--secondary));
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .karachi-content-box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .karachi-content-box h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .karachi-content-box p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .karachi-badge-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 35px;
+        }
+
+        .karachi-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .karachi-badge-item i {
+            color: var(--primary);
+        }
+
+        /* Service Request & Contact Section */
+        .contact-section {
+            padding: 100px 0;
+            background-color: var(--secondary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info-side h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-side p {
+            color: var(--text-muted);
+            margin-bottom: 35px;
+            font-size: 1.05rem;
+        }
+
+        .contact-details-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .contact-detail-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .contact-detail-text h4 {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 4px;
+        }
+
+        .contact-detail-text a, .contact-detail-text span {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .contact-detail-text a:hover {
+            color: var(--primary);
+        }
+
+        .contact-form-side {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .contact-form-side h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-muted);
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-error {
+            color: #ef4444;
+            font-size: 0.75rem;
+            margin-top: 4px;
+            display: none;
+        }
+
+        .form-success-message {
+            display: none;
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid var(--success);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .form-success-message h4 {
+            color: var(--success);
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .form-success-message p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 0;
+        }
+
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .faq-item {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item.active {
+            border-color: var(--primary);
+        }
+
+        .faq-question {
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.05rem;
+            cursor: pointer;
+            user-select: none;
+            gap: 16px;
+        }
+
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 24px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding: 0 24px 20px 24px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 80px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            margin: 20px 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .footer-col h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 4px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--primary);
+            margin-top: 4px;
+        }
+
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            background-color: var(--primary);
+            color: var(--secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            background-color: var(--primary-light);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero h1 { font-size: 3rem; }
+            .process-grid { grid-template-columns: repeat(3, 1fr); }
+            .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+        }
+
+        @media (max-width: 992px) {
+            .hero-grid, .sector-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+            .services-grid, .safety-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links, .nav-cta { display: none; }
+            .hamburger { display: block; }
+            .checklist-items { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 768px) {
+            .services-grid, .safety-grid, .why-grid, .process-grid { grid-template-columns: 1fr; }
+            .hero-features { grid-template-columns: 1fr; gap: 12px; }
+            .form-row { grid-template-columns: 1fr; }
+            .sector-list { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .top-bar-content { justify-content: center; text-align: center; }
+            .top-bar-info { justify-content: center; }
+        }
+
+        @media (max-width: 576px) {
+            .container { padding: 0 16px; }
+            .hero h1 { font-size: 2.1rem; }
+            .section-title { font-size: 2rem; }
+            .checklist-wrapper, .contact-form-side, .hero-visual, .sector-visual-box { padding: 24px; }
+        }
+
+        /* Mobile Menu Overlay */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 280px;
+            height: 100vh;
+            background-color: var(--bg-card);
+            border-left: 1px solid var(--border-color);
+            z-index: 1100;
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            transition: right 0.3s ease;
+            box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        }
+
+        .mobile-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+
+        .mobile-close-btn {
+            background: none;
+            color: var(--text-main);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .mobile-nav-links a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        .mobile-nav-links a:hover, .mobile-nav-links a.active {
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body class="circuit-bg">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-info">
+                <a href="tel:03102905380"><i class="fas fa-phone-alt"></i> 03102905380</a>
+                <a href="https://wa.me/923102905380" target="_blank"><i class="fab fa-whatsapp"></i> +92 310 2905380</a>
+                <a href="mailto:electriciansupport@gmail.com"><i class="fas fa-envelope"></i> electriciansupport@gmail.com</a>
+            </div>
+            <div>
+                <span><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 6px;"></i> Karachi, Pakistan</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                Electrician Service
+            </a>
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Services</a>
+                <a href="#residential">Residential</a>
+                <a href="#commercial">Commercial</a>
+                <a href="#safety">Safety</a>
+                <a href="#process">Process</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="nav-cta">
+                <a href="https://wa.me/923102905380" target="_blank" class="btn btn-whatsapp" aria-label="WhatsApp Now">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="tel:03102905380" class="btn btn-primary" aria-label="Call Now">
+                    <i class="fas fa-phone-alt"></i> 03102905380
+                </a>
+            </div>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <div class="logo" style="font-size: 1rem;">
+                <div class="logo-icon" style="width: 36px; height: 36px; font-size: 1rem;"><i class="fas fa-bolt"></i></div>
+                Electrician Service
+            </div>
+            <button class="mobile-close-btn" id="mobileCloseBtn"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#residential" class="mobile-link">Residential</a>
+            <a href="#commercial" class="mobile-link">Commercial</a>
+            <a href="#safety" class="mobile-link">Safety</a>
+            <a href="#process" class="mobile-link">Process</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+            <a href="https://wa.me/923102905380" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                <i class="fab fa-whatsapp"></i> WhatsApp Now
+            </a>
+            <a href="tel:03102905380" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-phone-alt"></i> Call 03102905380
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-shield-alt"></i> Professional Electrical Assistance in Karachi
+                    </div>
+                    <h1>Reliable Electrical Services in <span>Karachi</span></h1>
+                    <p>Electrician Service provides professional electrical assistance for residential and commercial electrical needs throughout Karachi, Pakistan. Quality workmanship, dependable repairs, and expert troubleshooting.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Book an Electrician <i class="fas fa-arrow-right"></i></a>
+                        <a href="#services" class="btn btn-outline">View Services</a>
+                        <a href="https://wa.me/923102905380" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="hero-feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Wiring & Repairs</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Residential & Commercial</span>
+                        </div>
+                        <div class="hero-feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Karachi, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="electric-panel-mockup">
+                        <div class="panel-header">
+                            <span class="panel-title"><i class="fas fa-sliders-h" style="color: var(--primary);"></i> Main Circuit Breaker Panel</span>
+                            <div class="power-indicator" title="System Live"></div>
+                        </div>
+                        <div class="circuit-breakers-grid">
+                            <div class="breaker-switch">
+                                <div class="breaker-handle on"></div>
+                                <span class="breaker-label">Main</span>
+                            </div>
+                            <div class="breaker-switch">
+                                <div class="breaker-handle on"></div>
+                                <span class="breaker-label">Lights</span>
+                            </div>
+                            <div class="breaker-switch">
+                                <div class="breaker-handle on"></div>
+                                <span class="breaker-label">Sockets</span>
+                            </div>
+                            <div class="breaker-switch">
+                                <div class="breaker-handle on"></div>
+                                <span class="breaker-label">AC/Fans</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="electrical-stats-card">
+                        <div>
+                            <span class="stat-item-title">Service Location</span>
+                            <div class="stat-item-value">Karachi, Pakistan</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <span class="stat-item-title">Direct Contact</span>
+                            <div class="stat-item-value">03102905380</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-tools"></i> Our Expertise</div>
+                <h2 class="section-title">Professional Electrical Services</h2>
+                <p class="section-desc">Comprehensive electrical solutions delivered with precision, safety, and adherence to professional standards.</p>
+            </div>
+            <div class="services-grid">
+                <!-- 1 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-network-wired"></i></div>
+                        <h3 class="service-title">Electrical Wiring</h3>
+                        <p class="service-desc">Professional installation and replacement of residential and commercial electrical wiring systems.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 2 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-tools"></i></div>
+                        <h3 class="service-title">Electrical Repairs</h3>
+                        <p class="service-desc">Reliable repair solutions for faulty connections, flickering fixtures, and electrical malfunctions.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 3 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-toggle-on"></i></div>
+                        <h3 class="service-title">Switch & Socket Installation</h3>
+                        <p class="service-desc">Safe installation and replacement of wall switches, power outlets, and dimmer controls.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 4 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="service-title">Lighting Installation</h3>
+                        <p class="service-desc">Expert indoor and outdoor lighting setup, LED installations, chandeliers, and accent lighting.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 5 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="service-title">Circuit Breaker Services</h3>
+                        <p class="service-desc">Circuit breaker inspection, maintenance, replacement, and overload protection setup.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 6 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-server"></i></div>
+                        <h3 class="service-title">Electrical Panel Services</h3>
+                        <p class="service-desc">Distribution board and electrical panel maintenance, organization, and safety checks.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 7 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-fan"></i></div>
+                        <h3 class="service-title">Fan Installation & Repair</h3>
+                        <p class="service-desc">Ceiling fan, exhaust fan, and ventilation system installation, balancing, and repair.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 8 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-plug"></i></div>
+                        <h3 class="service-title">Power Socket Installation</h3>
+                        <p class="service-desc">Dedicated power socket installations for heavy-duty appliances and general usage.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 9 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-search"></i></div>
+                        <h3 class="service-title">Fault Finding & Troubleshooting</h3>
+                        <p class="service-desc">Methodical diagnosis and identification of complex electrical faults and tripping issues.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 10 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-home"></i></div>
+                        <h3 class="service-title">Residential Electrical Services</h3>
+                        <p class="service-desc">Complete electrical assistance tailored for homes, apartments, and residential properties.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 11 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-building"></i></div>
+                        <h3 class="service-title">Commercial Electrical Services</h3>
+                        <p class="service-desc">Robust electrical solutions designed for offices, retail shops, and commercial spaces.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- 12 -->
+                <div class="service-card">
+                    <div>
+                        <div class="service-icon-box"><i class="fas fa-clipboard-check"></i></div>
+                        <h3 class="service-title">Electrical Maintenance</h3>
+                        <p class="service-desc">Routine electrical checkups and preventive maintenance to ensure system longevity and safety.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request Service <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Residential Services Section -->
+    <section class="sector-section" id="residential">
+        <div class="container">
+            <div class="sector-grid">
+                <div class="sector-content">
+                    <div class="section-badge"><i class="fas fa-home"></i> Home Electrical</div>
+                    <h2>Residential Electrical Services</h2>
+                    <p>Your home relies on stable electricity for daily comfort and safety. We offer dependable residential electrical services to keep your living space running smoothly.</p>
+                    <div class="sector-list">
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Electrical wiring</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Switch replacement</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Socket installation</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Lighting installation</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Fan installation</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Circuit breaker checks</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Electrical troubleshooting</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> General electrical maintenance</div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book Residential Service</a>
+                </div>
+                <div class="sector-visual-box">
+                    <div class="sector-visual-header">
+                        <div class="sector-visual-icon"><i class="fas fa-house-chimney"></i></div>
+                        <div>
+                            <div class="sector-visual-badge">Residential Systems</div>
+                            <h4 style="font-size: 1.1rem; font-weight: 700;">Home Electrical Care</h4>
+                        </div>
+                    </div>
+                    <div class="sector-visual-body">
+                        <p style="font-size: 0.95krem; color: var(--text-muted); margin-bottom: 16px;">Ensuring household safety, proper grounding, and efficient power distribution across all rooms.</p>
+                        <div class="wiring-diagram-line"></div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted);">
+                            <span>Safe Connections</span>
+                            <span>Standard Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commercial Services Section -->
+    <section class="sector-section" style="background-color: var(--secondary);" id="commercial">
+        <div class="container">
+            <div class="sector-grid" style="grid-template-columns: 1.2fr 1fr;">
+                <div class="sector-visual-box">
+                    <div class="sector-visual-header">
+                        <div class="sector-visual-icon" style="background: rgba(245, 158, 11, 0.1); color: var(--primary);"><i class="fas fa-city"></i></div>
+                        <div>
+                            <div class="sector-visual-badge" style="color: var(--primary);">Commercial Systems</div>
+                            <h4 style="font-size: 1.1rem; font-weight: 700;">Business & Office Infrastructure</h4>
+                        </div>
+                    </div>
+                    <div class="sector-visual-body">
+                        <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 16px;">Powering workspaces, retail storefronts, and commercial facilities with robust electrical setups.</p>
+                        <div class="wiring-diagram-line" style="background: linear-gradient(90deg, var(--accent), var(--primary));"></div>
+                        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted);">
+                            <span>High Load Capacity</span>
+                            <span>Preventive Upkeep</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sector-content">
+                    <div class="section-badge"><i class="fas fa-building"></i> Commercial Electrical</div>
+                    <h2>Commercial Electrical Services</h2>
+                    <p>Commercial properties require careful electrical management to support business operations without interruption. We provide structured commercial electrical solutions.</p>
+                    <div class="sector-list">
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Commercial wiring</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Lighting systems</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Electrical panels</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Power sockets</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Circuit protection</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Electrical troubleshooting</div>
+                        <div class="sector-list-item"><i class="fas fa-check-circle"></i> Maintenance support</div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book Commercial Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Section -->
+    <section class="safety-section" id="safety">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-shield-alt"></i> Safety First</div>
+                <h2 class="section-title">Electrical Safety Practices</h2>
+                <p class="section-desc">Electrical safety is paramount. Follow these general educational guidelines to maintain a secure environment.</p>
+            </div>
+            <div class="safety-grid">
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-plug"></i></div>
+                    <div class="safety-content">
+                        <h3>Avoid Overloaded Sockets</h3>
+                        <p>Do not plug too many high-wattage appliances into a single outlet or extension cord to prevent overheating.</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="safety-content">
+                        <h3>Inspect Damaged Wires</h3>
+                        <p>Regularly check cords and cables for frayed insulation or exposed copper, and replace them promptly.</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-tint-slash"></i></div>
+                    <div class="safety-content">
+                        <h3>Keep Equipment Dry</h3>
+                        <p>Ensure electrical switches, sockets, and devices remain away from moisture, water leaks, and damp areas.</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-shield-alt"></i></div>
+                    <div class="safety-content">
+                        <h3>Use Circuit Protection</h3>
+                        <p>Ensure appropriate circuit breakers and residual current devices are installed to protect against electrical faults.</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-hand-paper"></i></div>
+                    <div class="safety-content">
+                        <h3>Do Not Handle Exposed Wiring</h3>
+                        <p>Never touch exposed live wires or attempt internal panel work without turning off the main power supply.</p>
+                    </div>
+                </div>
+                <div class="safety-card">
+                    <div class="safety-icon"><i class="fas fa-user-tie"></i></div>
+                    <div class="safety-content">
+                        <h3>Contact a Qualified Professional</h3>
+                        <p>For complex installations, panel repairs, and major electrical work, always rely on a qualified professional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Checklist Section -->
+    <section class="checklist-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-tasks"></i> Awareness Tool</div>
+                <h2 class="section-title">Basic Electrical Checklist</h2>
+                <p class="section-desc">Use this interactive checklist to review your home or office electrical points.</p>
+            </div>
+            <div class="checklist-wrapper">
+                <div class="checklist-progress-container">
+                    <div class="checklist-progress-info">
+                        <span>Checklist Completion</span>
+                        <span id="progressText">0%</span>
+                    </div>
+                    <div class="checklist-progress-bar">
+                        <div class="checklist-progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                <div class="checklist-items">
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check1" class="checklist-box">
+                        <label for="check1">Switches working properly</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check2" class="checklist-box">
+                        <label for="check2">Power sockets functioning</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check3" class="checklist-box">
+                        <label for="check3">No visibly damaged wires</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check4" class="checklist-box">
+                        <label for="check4">Circuit breakers accessible</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check5" class="checklist-box">
+                        <label for="check5">Lights functioning</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check6" class="checklist-box">
+                        <label for="check6">Fans functioning</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check7" class="checklist-box">
+                        <label for="check7">No obvious overheating signs</label>
+                    </div>
+                    <div class="checklist-item check-item">
+                        <input type="checkbox" id="check8" class="checklist-box">
+                        <label for="check8">Electrical panel appears organized</label>
+                    </div>
+                </div>
+                <div class="checklist-notice">
+                    <i class="fas fa-info-circle" style="color: var(--accent); margin-right: 6px;"></i> Note: This is a basic awareness checklist and is NOT a professional electrical inspection.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-stream"></i> Simple Workflow</div>
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-desc">A straightforward and professional process for your electrical service requirements.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Contact</h3>
+                    <p class="process-desc">Customer contacts Electrician Service via phone, email, or WhatsApp.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">Requirement</h3>
+                    <p class="process-desc">Understand the electrical issue or specific service requirement.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Assessment</h3>
+                    <p class="process-desc">Review the reported electrical requirement and discuss solutions.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">04</div>
+                    <h3 class="process-title">Service</h3>
+                    <p class="process-desc">Provide the appropriate electrical service with professional care.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-number">05</div>
+                    <h3 class="process-title">Completion</h3>
+                    <p class="process-desc">Confirm the requested work has been properly addressed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-star"></i> Why Choose Us</div>
+                <h2 class="section-title">Our Commitment to Quality</h2>
+                <p class="section-desc">Dedicated to dependable electrical assistance across Karachi.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-user-gear"></i></div>
+                    <h3 class="why-title">Professional Assistance</h3>
+                    <p class="why-desc">Skilled handling of wiring, repairs, and installations.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="why-title">Clear Communication</h3>
+                    <p class="why-desc">Transparent discussions regarding your service needs.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-building-user"></i></div>
+                    <h3 class="why-title">Residential & Commercial</h3>
+                    <p class="why-desc">Tailored support for homes, offices, and commercial spaces.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="why-title">Service-Focused</h3>
+                    <p class="why-desc">Dedicated entirely to meeting your electrical requirements.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3 class="why-title">Safety-Conscious Work</h3>
+                    <p class="why-desc">Strict adherence to electrical safety best practices.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-list-check"></i></div>
+                    <h3 class="why-title">Organized Process</h3>
+                    <p class="why-desc">Structured workflow from initial contact to completion.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fab fa-whatsapp"></i></div>
+                    <h3 class="why-title">Convenient Contact</h3>
+                    <p class="why-desc">Easy reachability via phone, email, and WhatsApp.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3 class="why-title">Local Karachi Service</h3>
+                    <p class="why-desc">Proudly serving customers throughout Karachi, Pakistan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Karachi Local Service Section -->
+    <section class="karachi-section">
+        <div class="container">
+            <div class="karachi-content-box">
+                <div class="section-badge"><i class="fas fa-map-marked-alt"></i> Local Service</div>
+                <h2>Electrical Services in Karachi</h2>
+                <p>Electrician Service provides professional electrical assistance in Karachi, Pakistan. Whether you need wiring, repairs, lighting installation, or electrical maintenance, we are ready to assist you.</p>
+                <div class="karachi-badge-grid">
+                    <div class="karachi-badge-item"><i class="fas fa-check"></i> Karachi, Pakistan</div>
+                    <div class="karachi-badge-item"><i class="fas fa-check"></i> Residential & Commercial</div>
+                    <div class="karachi-badge-item"><i class="fas fa-check"></i> Direct WhatsApp & Phone</div>
+                </div>
+                <a href="https://wa.me/923102905380" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Contact on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Service Request Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-side">
+                    <div class="section-badge"><i class="fas fa-envelope"></i> Get in Touch</div>
+                    <h2>Contact Electrician Service</h2>
+                    <p>Reach out to us for professional electrical services in Karachi. Contact us via phone, email, or WhatsApp, or fill out the service request form.</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-detail-text">
+                                <h4>Phone</h4>
+                                <a href="tel:03102905380">03102905380</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-detail-text">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/923102905380" target="_blank">+92 310 2905380</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-detail-text">
+                                <h4>Email</h4>
+                                <a href="mailto:electriciansupport@gmail.com">electriciansupport@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-detail-text">
+                                <h4>Location</h4>
+                                <span>Karachi, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-side">
+                    <h3>Service Request Form</h3>
+                    <form id="serviceForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" class="form-input" placeholder="Enter your full name" required>
+                                <div class="form-error" id="nameError">Please enter your name.</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone *</label>
+                                <input type="tel" id="phone" class="form-input" placeholder="03102905380" required>
+                                <div class="form-error" id="phoneError">Please enter your phone number.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email *</label>
+                                <input type="email" id="email" class="form-input" placeholder="yourname@gmail.com" required>
+                                <div class="form-error" id="emailError">Please enter a valid email address.</div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="propertyType">Property Type *</label>
+                                <select id="propertyType" class="form-select" required>
+                                    <option value="">Select Property Type</option>
+                                    <option value="Home">Home</option>
+                                    <option value="Apartment">Apartment</option>
+                                    <option value="Office">Office</option>
+                                    <option value="Shop">Shop</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="form-error" id="propertyError">Please select property type.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="serviceRequired">Service Required *</label>
+                            <select id="serviceRequired" class="form-select" required>
+                                <option value="">Select Service Required</option>
+                                <option value="Wiring">Wiring</option>
+                                <option value="Electrical Repair">Electrical Repair</option>
+                                <option value="Lighting">Lighting</option>
+                                <option value="Switch / Socket">Switch / Socket</option>
+                                <option value="Circuit Breaker">Circuit Breaker</option>
+                                <option value="Fan">Fan</option>
+                                <option value="Electrical Panel">Electrical Panel</option>
+                                <option value="Troubleshooting">Troubleshooting</option>
+                                <option value="Maintenance">Maintenance</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="form-error" id="serviceError">Please select a service required.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="issueDescription">Electrical Issue / Requirement *</label>
+                            <textarea id="issueDescription" class="form-textarea" placeholder="Describe your electrical requirement or issue..." required></textarea>
+                            <div class="form-error" id="descError">Please provide a description.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Submit Service Request <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+
+                    <div class="form-success-message" id="successMessage">
+                        <h4><i class="fas fa-check-circle"></i> Request Form Validated Successfully!</h4>
+                        <p>Thank you for submitting your request. Since this is a static website, your information has not been sent to a backend server. You can instantly send your request details via WhatsApp for prompt assistance.</p>
+                        <a href="https://wa.me/923102905380" target="_blank" class="btn btn-whatsapp" id="whatsappSubmitBtn">
+                            <i class="fab fa-whatsapp"></i> Contact on WhatsApp Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge"><i class="fas fa-question-circle"></i> Got Questions?</div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Clear answers regarding our electrical services in Karachi.</p>
+            </div>
+            <div class="faq-accordion">
+                <!-- 1 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What electrical services do you provide?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide professional electrical wiring, repairs, switch & socket installation, lighting installation, circuit breaker services, electrical panel services, fan installation & repair, power socket installation, fault finding & troubleshooting, residential electrical services, commercial electrical services, and electrical maintenance.
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide residential electrical services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we offer comprehensive residential electrical services including home wiring, switch replacement, socket installation, lighting setup, fan installation, circuit breaker checks, troubleshooting, and general maintenance.
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you handle commercial electrical work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we provide commercial electrical support for offices, shops, and commercial properties, including commercial wiring, lighting systems, electrical panels, power sockets, and maintenance support.
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you help with electrical wiring?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we specialize in professional installation, repair, and replacement of electrical wiring for both residential and commercial spaces.
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you install switches and sockets?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we safely install and replace wall switches, power outlets, dimmer controls, and heavy-duty power sockets.
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you help with lighting installation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we install indoor and outdoor lighting fixtures, LED lights, chandeliers, and specialized accent lighting.
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can you troubleshoot electrical faults?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, we provide methodical fault finding and troubleshooting services to diagnose and address electrical tripping, faulty connections, and power issues.
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I contact the electrician?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can contact us conveniently by phone at 03102905380, via WhatsApp at +92 310 2905380, or by email at electriciansupport@gmail.com.
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you provide services in Karachi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Electrician Service provides electrical services in Karachi, Pakistan.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-icon"><i class="fas fa-bolt"></i></div>
+                        Electrician Service
+                    </a>
+                    <p>Electrician Service provides professional electrical assistance for residential and commercial electrical needs in Karachi, Pakistan.</p>
+                    <a href="#contact" class="btn btn-primary" style="margin-top: 10px;">Book an Electrician</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#residential">Residential</a></li>
+                        <li><a href="#commercial">Commercial</a></li>
+                        <li><a href="#safety">Safety</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Electrical Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Electrical Wiring</a></li>
+                        <li><a href="#services">Electrical Repairs</a></li>
+                        <li><a href="#services">Lighting Installation</a></li>
+                        <li><a href="#services">Switch & Socket Services</a></li>
+                        <li><a href="#services">Circuit Breaker Services</a></li>
+                        <li><a href="#services">Electrical Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:03102905380">03102905380</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/923102905380" target="_blank">+92 310 2905380</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:electriciansupport@gmail.com">electriciansupport@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Karachi, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; <span id="currentYear">2026</span> Electrician Service. All rights reserved.</div>
+                <div>Karachi, Pakistan</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Dynamic Current Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Navbar Scroll Effect & Back to Top Visibility
+        const navbar = document.getElementById('navbar');
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.3)';
+                backToTopBtn.classList.add('visible');
+            } else {
+                navbar.style.boxShadow = 'none';
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+        });
+
+        mobileCloseBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('open');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-item.active');
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                }
+                item.classList.toggle('active');
+            });
+        });
+
+        // Interactive Checklist
+        const checkboxes = document.querySelectorAll('.checklist-box');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+
+        function updateChecklistProgress() {
+            const total = checkboxes.length;
+            let checkedCount = 0;
+            checkboxes.forEach(box => {
+                if (box.checked) checkedCount++;
+            });
+            const percentage = Math.round((checkedCount / total) * 100);
+            progressFill.style.width = percentage + '%';
+            progressText.textContent = percentage + '%';
+        }
+
+        checkboxes.forEach(box => {
+            box.addEventListener('change', updateChecklistProgress);
+        });
+
+        // Service Request Form Validation
+        const serviceForm = document.getElementById('serviceForm');
+        const successMessage = document.getElementById('successMessage');
+
+        serviceForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            const fullName = document.getElementById('fullName');
+            const phone = document.getElementById('phone');
+            const email = document.getElementById('email');
+            const propertyType = document.getElementById('propertyType');
+            const serviceRequired = document.getElementById('serviceRequired');
+            const issueDescription = document.getElementById('issueDescription');
+
+            const nameError = document.getElementById('nameError');
+            const phoneError = document.getElementById('phoneError');
+            const emailError = document.getElementById('emailError');
+            const propertyError = document.getElementById('propertyError');
+            const serviceError = document.getElementById('serviceError');
+            const descError = document.getElementById('descError');
+
+            // Reset errors
+            [nameError, phoneError, emailError, propertyError, serviceError, descError].forEach(el => el.style.display = 'none');
+            [fullName, phone, email, propertyType, serviceRequired, issueDescription].forEach(el => el.style.borderColor = 'var(--border-color)');
+
+            if (!fullName.value.trim()) {
+                nameError.style.display = 'block';
+                fullName.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            if (!phone.value.trim()) {
+                phoneError.style.display = 'block';
+                phone.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim() || !emailRegex.test(email.value)) {
+                emailError.style.display = 'block';
+                email.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            if (!propertyType.value) {
+                propertyError.style.display = 'block';
+                propertyType.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            if (!serviceRequired.value) {
+                serviceError.style.display = 'block';
+                serviceRequired.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            if (!issueDescription.value.trim()) {
+                descError.style.display = 'block';
+                issueDescription.style.borderColor = '#ef4444';
+                isValid = false;
+            }
+
+            if (isValid) {
+                serviceForm.style.display = 'none';
+                successMessage.style.display = 'block';
+            }
+        });
+
+        // Active Navigation Highlight on Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
